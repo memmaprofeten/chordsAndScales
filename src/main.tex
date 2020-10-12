@@ -7,7 +7,8 @@
 % Packages
 \usepackage{amsmath}
 \usepackage{guitarchordschemes}
-\title{My chords and scales that I have learned}
+\usepackage{guitar}
+\title{My chords, scales and songs that I have learned}
 \author{Joel Sågfors}
 \date{\today}
 % Document
@@ -26,7 +27,7 @@
     and is used in a lot of songs.
 
     \subsection{Open A major}
-    This chord is preferrably played with the fingers "out-of-order" as listed in the chord-box.
+    This chord is easier to play with the fingers "out-of-order" as listed in the chord-box.
     The fingering makes it easier to get all fingers close to the fret.
     The root is in the fifth string.
 
@@ -36,5 +37,108 @@
     ring   = {5,1},
     mute   = {6}
     ]
+
+    The notes in this chord is, A, E, A, C, E
+
+    \subsection{A minor}
+    Pretty self-explanatory, the minor version of A.
+
+    \chordscheme[
+    name = Am,
+    finger = {2/4:2, 2/3:3, 2/2.1},
+    ring = {5,1},
+    mute = {6}
+    ]
+
+    The notes in this chord are A, E, A, B\#, E.
+
+
+    \section{F chord}
+    The second to last note in the note circle, and a dreaded chord for many beginners, because the 'normal' version of
+    F is barre.
+    With proper practice you can however learn the barred version and in the process you learned a lot of chords as this shape can be moved around.
+
+    \subsection{Barre F}
+
+    \chordscheme[
+    name = F,
+    finger = {3/5:4,3/4:4,2/3:2},
+    barre = {1/1-6:1}
+    ]
+
+
+    \chapter{Scales}
+
+
+    \section{Minor Pentatonic}
+    One of, if not the most common scales in rock and blues music is the minor pentatonic scale.
+    The name means minor five note scale and that is pretty much what it is.
+    The beauty of the minor pentatonic scale is that it can be played anywhere on the guitar neck, which makes it very versatile.
+
+    The basis of the scale goes as follows:
+
+    \bigskip
+
+    \scales[
+    name = Minor Pentatonic,
+    finger = {
+    2/1:1, 5/1:4,
+    2/2:1, 5/2:4,
+    2/3:1, 4/3:3,
+    2/4:1, 4/4:3,
+    2/5:1, 4/5:3,
+    2/6:1, 5/6:4
+    },
+    root = {2/6, 4/4, 2/1}
+    ]
+
+
+    \section{Major Scales}
+    Major scales are for the major notes in the circle.
+    I learned this is primary school but has since needed to relearn
+
+    \subsection{C Major}
+    The first major scale I learned for guitar was C Major.
+    It consists of only major notes and can be played from the top of the neck, where I learned.
+
+    \scales[
+    name = C Major
+    position = 1,
+    finger = {
+    1/1:1,3/1:3,
+    1/2:1,3/2:3,
+    2/3:2,
+    2/4:2,3/4:3,
+    2/5:2,3/5:3,
+    1/6:2,3/6:3
+    }
+    ]
+
+    \subsubsection{Chords in C Major}
+    These are the chords in C:
+
+    C, Dm, Em, F, G, Am
+
+    Numbered like.
+
+    1 = C
+    2 = Dm
+    3 = Em
+    4 = F
+    5 = G
+    6 = Am
+
+
+    \chapter{Songs}
+
+
+    \section{Dreams - Fleetwood Mac}
+    Dreams by Fleetwood Mac is a nice chill song about some players, not sure what they are playing though.
+    I will shortly present how to play the parts of the song and also do and chord overlay for the lyrics I think.
+
+    \begin{guitar}
+    \end{guitar}
+    \chapter*{Bonus Chapter: Riffs}
+
 
 \end{document}
