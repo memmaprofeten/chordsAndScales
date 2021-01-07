@@ -8,6 +8,7 @@
 \usepackage{amsmath}
 \usepackage{guitarchordschemes}
 \usepackage{guitar}
+\usepackage{graphicx}
 \title{My chords, scales and songs that I have learned}
 \author{Joel Sågfors}
 \date{\today}
@@ -17,9 +18,31 @@
     \maketitle
 
 
+    \chapter{Introduction}
+    This is my personal reference on all music related topics on the guitar.
+    As the title states, this work will contain chords, scales and songs.
+
+
+    \section{Music Theory}
+    Notes are just sound waves of certain frequencies that are named by letters, and for the mostpart something inbetween the letters.
+    It is like the compass, we have north, south, east and west.
+    North-west in between north and west and so forth.
+    In music you have sharp ($\sharp$) and flat ($\flat$), which is one semitone higher and lower, respectively.
+    Except between E and F there is no "middle note".
+    The same goes for B and C.
+    This is illustrated in figure \ref{fig:note_circle}
+
+    \begin{figure}[h]
+        \includegraphics[width=\textwidth]{note_circle.png}
+        \caption{The note circle, courtesy of Justin Sandercoe}
+        \label{fig:note_circle}
+    \end{figure}
+
+
     \chapter{Chords}
-    Learning chords is a cornerstone to learning guitar. Strumming chords is usually the first way a beginner plays the guitar.
-    In chapter we explore the different chords for each note as I learn them, starting from the open major chord.
+    Learning chords is a cornerstone to learning guitar.
+    Strumming chords is usually the first way a beginner plays the guitar.
+    In this chapter we explore the different chords for each note as I learn them, starting from the open major chord.
 
 
     \section{A chord}
@@ -38,19 +61,88 @@
     mute   = {6}
     ]
 
-    The notes in this chord is, A, E, A, C, E
+    The notes in this chord is, A, E, A, C\#, E
 
     \subsection{A minor}
     Pretty self-explanatory, the minor version of A.
 
     \chordscheme[
     name = Am,
-    finger = {2/4:2, 2/3:3, 2/2.1},
+    finger = {2/4:2, 2/3:3, 1/2:1},
     ring = {5,1},
     mute = {6}
     ]
 
-    The notes in this chord are A, E, A, B\#, E.
+    The notes in this chord are A, E, A, C, E.
+
+    \subsection{Asus2}
+    The sus in the name comes from suspended, we suspend (remove) the third in the chord.
+    The gist of it is that we create major chords from the 1st, 3rd, and 5th notes in a key.
+    This third note plays an important part in the chords, when it is flattened by a semitone, we get a minor chord.
+    When removing it altogether we get a suspended chord.
+
+    Numbering the suspended chords follows its own logic.
+    The number corresponds to the note that has replaced the 3rd, in this case it is replaced by the 2nd note in A scale.
+    The third note in A is C\#, in this case replaced by B.
+    The fingering here is not set in stone, since it can be a bit weird to stretch the finger down to the 3rd fret some alternative is fine.
+
+
+    \chordscheme[
+    name = Asus2,
+    finger = {2/4:2,2/3:3},
+    mute = {6},
+    ring = {5,2,1}
+    ]
+
+    The notes in this chord are A, E, A, B, E.
+
+    \subsection{Asus4}
+    Another variant of Asus.
+    This time C\# is raised to D.
+
+    \chordscheme[
+    name = Asus4,
+    finger = {2/4:2, 2/3:3, 3/2:(3/4)},
+    mute = {6},
+    ring = {5,1}
+    ]
+
+    The notes in this chord are A, E, A, D, E.
+
+    \subsection{A7}
+    "Seventh" chords are used much in blues, the name comes from the seventh note in the scale.
+
+    \chordscheme[
+    name = A7,
+    finger = {2/4:2, 3/2:4},
+    mute = {6},
+    ring = {5,3,1}
+    ]
+
+
+    \section{D chord}
+    An easy chord that has a chirpy sound because we don't play the two lowest strings at all.
+
+    \chordscheme[
+    name = D,
+    finger = {2/3:1, 3/2:3, 2/1:2},
+    ring = {4},
+    mute = {6,5}
+    ]
+
+    Notes in this chord are D, A, D, F\#.
+
+    \subsection{D minor}
+    I have always struggled with the fingering of this chord, hope to get it one day.
+
+    \chordscheme[
+    name = Dm,
+    finger = {2/3:2, 3/2:3, 1/1:1},
+    ring = {4},
+    mute = {5,6}
+    ]
+
+    Notes in this chord are D, A, D, F, which means F\# is the third in D.
 
 
     \section{F chord}
@@ -132,13 +224,13 @@
     \chapter{Songs}
 
 
-    \section{Dreams - Fleetwood Mac}
-    Dreams by Fleetwood Mac is a nice chill song about some players, not sure what they are playing though.
-    I will shortly present how to play the parts of the song and also do and chord overlay for the lyrics I think.
+    \section{Californication - Red Hot Chili Peppers}
+    One of the "easier" songs around that still provide something outside the normal chord strumming.
+    This is the first song that I attempt to write down in this book,it has taken some time to master it but daily practice does a lot.
 
-    \begin{guitar}
-    \end{guitar}
-    \chapter*{Bonus Chapter: Riffs}
+    \subsection{Riff}
+    The riff is played throughout the verse, and the original version is fairly easy.
+    I will show both this easier version, and a modified version that includes the bass part which is nice to play if one is doing it solo.
 
 
 \end{document}
